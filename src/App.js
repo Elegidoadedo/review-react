@@ -35,7 +35,7 @@ console.log(event)
       <div className="App">
         <h1>Hola</h1>
         <ul>
-          {contacts.map(e => <li>{e}</li>)}
+          {contacts.map((e,idx) => <li key={idx}>{e}</li>)}
         </ul>
         <Button onClick= {this.handleClick}>Hola</Button>
         <form>
